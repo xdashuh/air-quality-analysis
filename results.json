@@ -1,0 +1,400 @@
+{
+  "figures": [
+    {
+      "file": "01_bar_missing.png",
+      "caption": "Bar chart: percentage of missing values per column in the raw data"
+    },
+    {
+      "file": "02_bar_city_aqi.png",
+      "caption": "Bar chart: ten cities with the highest mean AQI"
+    },
+    {
+      "file": "03_hist_pm25.png",
+      "caption": "Histogram: distribution of daily PM2.5 readings"
+    },
+    {
+      "file": "04_scatter_pm.png",
+      "caption": "Scatter plot with trend line: PM2.5 against PM10"
+    },
+    {
+      "file": "05_pie_aqi_bucket.png",
+      "caption": "Pie chart: share of city-days in each AQI category"
+    },
+    {
+      "file": "06_line_monthly.png",
+      "caption": "Line chart: mean PM2.5 by calendar month (all cities)"
+    },
+    {
+      "file": "07_line_yearly.png",
+      "caption": "Line chart: yearly mean PM2.5 (2020 covers only part of the year)"
+    },
+    {
+      "file": "08_box_season.png",
+      "caption": "Box plot: PM2.5 by season (outliers hidden for readability)"
+    },
+    {
+      "file": "09_violin_city.png",
+      "caption": "Violin plot: AQI distribution in the five most polluted cities"
+    },
+    {
+      "file": "10_heatmap_corr.png",
+      "caption": "Heatmap: correlation matrix of pollutants and AQI"
+    },
+    {
+      "file": "11_count_bucket_season.png",
+      "caption": "Count plot: number of days in each AQI category, by season"
+    },
+    {
+      "file": "12_pairplot.png",
+      "caption": "Pair plot: PM2.5, PM10, NO2 and CO"
+    },
+    {
+      "file": "13_heatmap_city_month.png",
+      "caption": "Heatmap: mean PM2.5 by city and month (ten cities with most data)"
+    },
+    {
+      "file": "14_bar_lockdown.png",
+      "caption": "Grouped bar chart: PM2.5 in the lockdown window, 2019 vs 2020"
+    },
+    {
+      "file": "15_model_pred.png",
+      "caption": "Scatter plot: predicted against actual next-day PM2.5 on the test set"
+    }
+  ],
+  "raw_rows": 29531,
+  "raw_cols": 16,
+  "columns": [
+    "City",
+    "Date",
+    "PM25",
+    "PM10",
+    "NO",
+    "NO2",
+    "NOx",
+    "NH3",
+    "CO",
+    "SO2",
+    "O3",
+    "Benzene",
+    "Toluene",
+    "Xylene",
+    "AQI",
+    "AQI_Bucket"
+  ],
+  "raw_dtypes": {
+    "City": "object",
+    "Date": "object",
+    "PM25": "float64",
+    "PM10": "float64",
+    "NO": "float64",
+    "NO2": "float64",
+    "NOx": "float64",
+    "NH3": "float64",
+    "CO": "float64",
+    "SO2": "float64",
+    "O3": "float64",
+    "Benzene": "float64",
+    "Toluene": "float64",
+    "Xylene": "float64",
+    "AQI": "float64",
+    "AQI_Bucket": "object"
+  },
+  "raw_missing_pct": {
+    "City": 0.0,
+    "Date": 0.0,
+    "PM25": 15.6,
+    "PM10": 37.7,
+    "NO": 12.1,
+    "NO2": 12.1,
+    "NOx": 14.2,
+    "NH3": 35.0,
+    "CO": 7.0,
+    "SO2": 13.1,
+    "O3": 13.6,
+    "Benzene": 19.0,
+    "Toluene": 27.2,
+    "Xylene": 61.3,
+    "AQI": 15.9,
+    "AQI_Bucket": 15.9
+  },
+  "raw_duplicates": 0,
+  "bad_dates": 0,
+  "negative_values": {},
+  "filled_by_interpolation": {
+    "PM25": 737,
+    "PM10": 799,
+    "NO2": 886,
+    "AQI": 0
+  },
+  "missing_after_pct": {
+    "PM25": 13.1,
+    "PM10": 35.0,
+    "NO": 9.1,
+    "NO2": 9.1,
+    "NOx": 12.2,
+    "NH3": 32.4,
+    "CO": 4.0,
+    "SO2": 9.5,
+    "O3": 9.9,
+    "Benzene": 15.9,
+    "Toluene": 24.6,
+    "Xylene": 59.3,
+    "AQI": 15.9
+  },
+  "bucket_filled": 0,
+  "clean_rows": 29531,
+  "n_cities": 26,
+  "date_min": "2015-01-01",
+  "date_max": "2020-07-01",
+  "describe": {
+    "PM25": {
+      "mean": 67.35,
+      "median": 48.34,
+      "std": 65.16
+    },
+    "PM10": {
+      "mean": 118.37,
+      "median": 95.63,
+      "std": 91.44
+    },
+    "NO2": {
+      "mean": 28.22,
+      "median": 21.35,
+      "std": 24.39
+    },
+    "SO2": {
+      "mean": 15.0,
+      "median": 9.21,
+      "std": 19.24
+    },
+    "CO": {
+      "mean": 2.23,
+      "median": 0.89,
+      "std": 6.91
+    },
+    "O3": {
+      "mean": 34.3,
+      "median": 30.61,
+      "std": 21.74
+    },
+    "AQI": {
+      "mean": 166.46,
+      "median": 118.0,
+      "std": 140.7
+    }
+  },
+  "np_pm25_mean": 67.35,
+  "np_pm25_std": 65.16,
+  "city_table": [
+    {
+      "city": "Ahmedabad",
+      "aqi": 452.1,
+      "days": 1334
+    },
+    {
+      "city": "Delhi",
+      "aqi": 259.5,
+      "days": 1999
+    },
+    {
+      "city": "Patna",
+      "aqi": 240.8,
+      "days": 1459
+    },
+    {
+      "city": "Gurugram",
+      "aqi": 225.1,
+      "days": 1453
+    },
+    {
+      "city": "Lucknow",
+      "aqi": 218.0,
+      "days": 1893
+    },
+    {
+      "city": "Talcher",
+      "aqi": 172.9,
+      "days": 698
+    },
+    {
+      "city": "Jorapokhar",
+      "aqi": 159.3,
+      "days": 771
+    },
+    {
+      "city": "Brajrajnagar",
+      "aqi": 150.3,
+      "days": 713
+    },
+    {
+      "city": "Kolkata",
+      "aqi": 140.6,
+      "days": 754
+    },
+    {
+      "city": "Guwahati",
+      "aqi": 140.1,
+      "days": 495
+    }
+  ],
+  "worst_city": "Ahmedabad",
+  "worst_city_aqi": 452.1,
+  "best_city": "Thiruvananthapuram",
+  "best_city_aqi": 75.9,
+  "n_cities_ranked": 19,
+  "bucket_counts": {
+    "Good": 1341,
+    "Satisfactory": 8224,
+    "Moderate": 8829,
+    "Poor": 2781,
+    "Very Poor": 2337,
+    "Severe": 1338
+  },
+  "bucket_pct": {
+    "Good": 5.4,
+    "Satisfactory": 33.1,
+    "Moderate": 35.5,
+    "Poor": 11.2,
+    "Very Poor": 9.4,
+    "Severe": 5.4
+  },
+  "poor_plus_pct": 26.0,
+  "most_poor_city": "Ahmedabad",
+  "most_poor_city_pct": 81.9,
+  "season_table": [
+    {
+      "season": "Winter",
+      "mean": 100.1,
+      "median": 74.6
+    },
+    {
+      "season": "Summer",
+      "mean": 56.6,
+      "median": 44.3
+    },
+    {
+      "season": "Monsoon",
+      "mean": 38.7,
+      "median": 30.9
+    },
+    {
+      "season": "Post-monsoon",
+      "mean": 91.7,
+      "median": 67.7
+    }
+  ],
+  "worst_season": "Winter",
+  "best_season": "Monsoon",
+  "season_ratio": 2.58,
+  "worst_month": 11,
+  "best_month": 8,
+  "yearly_table": [
+    {
+      "year": 2015,
+      "pm25": 75.1,
+      "cities": 6
+    },
+    {
+      "year": 2016,
+      "pm25": 88.1,
+      "cities": 9
+    },
+    {
+      "year": 2017,
+      "pm25": 83.8,
+      "cities": 11
+    },
+    {
+      "year": 2018,
+      "pm25": 67.9,
+      "cities": 17
+    },
+    {
+      "year": 2019,
+      "pm25": 57.6,
+      "cities": 23
+    },
+    {
+      "year": 2020,
+      "pm25": 43.7,
+      "cities": 26
+    }
+  ],
+  "corr_aqi": {
+    "PM10": 0.8,
+    "CO": 0.68,
+    "PM25": 0.66,
+    "NO2": 0.54,
+    "SO2": 0.49,
+    "NOx": 0.48,
+    "NO": 0.44,
+    "Toluene": 0.28,
+    "NH3": 0.25,
+    "O3": 0.2,
+    "Xylene": 0.13,
+    "Benzene": 0.04
+  },
+  "top_corr_with_aqi": [
+    [
+      "PM10",
+      0.8
+    ],
+    [
+      "CO",
+      0.68
+    ],
+    [
+      "PM25",
+      0.66
+    ]
+  ],
+  "strongest_pair": [
+    "PM25",
+    "PM10",
+    0.83
+  ],
+  "pm25_pm10_spearman": 0.873,
+  "pm25_pm10_p": 0.0,
+  "pm25_pm10_ratio": 0.47,
+  "kruskal_H": 6423.9,
+  "kruskal_p": 0.0,
+  "lockdown_n_cities": 19,
+  "lockdown_mean_2019": 55.0,
+  "lockdown_mean_2020": 33.9,
+  "lockdown_change_pct": -38.3,
+  "lockdown_cities_improved": 17,
+  "lockdown_p": 1.9073486328125e-05,
+  "model": {
+    "train_rows": 14154,
+    "test_rows": 3532,
+    "split_date": "2020-01-23",
+    "rf_r2": 0.726,
+    "rf_mae": 9.57,
+    "base_r2": 0.742,
+    "base_mae": 8.81,
+    "importance": {
+      "PM25": 0.909,
+      "PM10": 0.027,
+      "NO2": 0.021,
+      "CO": 0.017,
+      "O3": 0.017,
+      "Month": 0.009
+    }
+  },
+  "findings": [
+    "26.0% of all city-days fall in the Poor, Very Poor or Severe AQI categories, while only 5.4% are rated Good.",
+    "Ahmedabad has the highest mean AQI (452.1) among the 19 cities with at least a year of data, while Thiruvananthapuram has the lowest (75.9). Ahmedabad has the largest share of Poor-or-worse days (81.9%).",
+    "Pollution varies with the season: mean PM2.5 is highest in Winter and lowest in Monsoon, a 2.58x difference. The worst month on average is November and the best is August.",
+    "The seasonal difference is statistically significant (Kruskal-Wallis H = 6423.9, p < 0.001).",
+    "AQI is most strongly correlated with PM10 (r = 0.8), followed by CO (r = 0.68) and PM2.5 (r = 0.66).",
+    "PM2.5 and PM10 move together (Spearman rho = 0.873), and the median PM2.5 reading is about 47% of the PM10 reading on the same day.",
+    "Average PM2.5 across cities was 75.1 \u00b5g/m\u00b3 in 2015 and 43.7 \u00b5g/m\u00b3 in 2020 (the final year is partial). The number of reporting cities changes over the years, so this trend should be read cautiously.",
+    "In the COVID-19 lockdown window (25 Mar - 30 Apr), mean PM2.5 fell by 38.3% compared with the same dates in 2019 (55.0 to 33.9 \u00b5g/m\u00b3; 17 of 19 cities improved). A Wilcoxon signed-rank test on city means shows this is significant (p < 0.001).",
+    "A random forest predicts next-day PM2.5 with R\u00b2 = 0.726 and MAE = 9.57 \u00b5g/m\u00b3 on unseen later dates, compared with R\u00b2 = 0.742 and MAE = 8.81 for the simple 'tomorrow equals today' baseline."
+  ],
+  "conclusion": [
+    "Winter has the highest PM2.5 levels and Monsoon the lowest, a 2.58x difference (Kruskal-Wallis p < 0.001). 26.0% of recorded city-days were Poor or worse, and Ahmedabad was the most polluted city on average (mean AQI 452.1). AQI follows particulate matter most closely.",
+    "The prediction model did not beat the simple 'tomorrow equals today' baseline, which suggests day-to-day PM2.5 is mostly explained by today's PM2.5 alone.",
+    "Limitations: the dataset has many missing values (only short gaps were filled), monitoring stations differ between cities and years, and the analysis shows association, not cause. Weather data such as wind and rainfall would improve both the analysis and the model."
+  ]
+}

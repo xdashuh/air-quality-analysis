@@ -1,0 +1,7 @@
+__pycache__/
+*.pyc
+.venv/
+.DS_Storedata/city_hour.csv
+data/station_hour.csv
+data/station_day.csv
+data/stations.csv
